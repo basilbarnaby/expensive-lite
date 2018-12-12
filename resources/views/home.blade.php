@@ -14,7 +14,12 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <h5>You are logged in!</h5>
+
+                    <p><strong>Roles</strong></p>
+                    @foreach (Auth::user()->roles as $role)
+                        <pre>{{ $role->name }}</pre>   
+                    @endforeach
                 </div>
             </div>
         </div>
