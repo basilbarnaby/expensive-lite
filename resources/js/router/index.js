@@ -13,7 +13,7 @@ export const router = new VueRouter({
     },
 		{
 			path: "/login",  
-			component: require("../components/Login.vue"), 
+			component: require("../components/auth/Login.vue"), 
 			name: "login"
     },
     
