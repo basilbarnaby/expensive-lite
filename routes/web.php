@@ -16,5 +16,5 @@
 // });
 
 Auth::routes();
-Route::redirect('/', '/home');
-Route::get('/home', 'Core\HomeController@index')->name('home');
+Route::get('/', 'Core\HomeController@index')->name('home');
+Route::get('{path}', 'Core\HomeController@index')->where('path', '([A-z\d-\/_.]+)?');
