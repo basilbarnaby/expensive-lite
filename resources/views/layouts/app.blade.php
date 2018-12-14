@@ -11,10 +11,13 @@
 
   
   <link rel="stylesheet" href="/css/app.css">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
   <div id="app">
-    <main-app/>
+    <div class="container-fluid">
+      <main-app/>
+    </div>
   </div>
   <script src="/js/app.js"></script>
 </body>

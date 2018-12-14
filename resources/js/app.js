@@ -10,6 +10,7 @@ require("./bootstrap");
 window.Vue = require("vue");
 
 import { router } from "./router";
+import { store } from "./store";
 
 require("./config");
 require("./modules/vue-progress-bar");
@@ -26,7 +27,6 @@ axios.defaults.headers.post["Content-Type"] = "application/json";
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 import MainApp from "./MainApp.vue";
-import { store } from "./store";
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key)))
 
@@ -39,6 +39,7 @@ import { store } from "./store";
 const app = new Vue({
 	el: "#app",
 	router,
+	store,
 	components: {
 		MainApp
 	}

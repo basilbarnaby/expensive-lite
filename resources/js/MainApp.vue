@@ -1,7 +1,7 @@
 <template>
   <div>
     <transition 
-      name="component-fade" 
+      name="fade" 
       mode="out-in">
       <router-view/>
     </transition>
